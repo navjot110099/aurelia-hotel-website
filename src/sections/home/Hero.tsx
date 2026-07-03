@@ -31,7 +31,7 @@ export function Hero() {
   const weather = MOODS.find((m) => m.id === mode)?.weather ?? MOODS[2].weather;
 
   return (
-    <section className="relative h-[100svh] min-h-[720px] w-full overflow-hidden">
+    <section className="relative flex min-h-[100svh] w-full flex-col overflow-hidden">
       {/* WebGL ocean */}
       <div className="absolute inset-0">
         <HeroScene mode={mode} />
@@ -70,7 +70,7 @@ export function Hero() {
       </div>
 
       {/* headline */}
-      <div className="relative z-10 mx-auto flex h-full max-w-[100rem] flex-col justify-center px-6 md:px-10">
+      <div className="relative z-10 mx-auto flex w-full max-w-[100rem] flex-1 flex-col justify-center px-6 pb-6 pt-28 md:px-10 lg:pb-0 lg:pt-0">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ export function Hero() {
           {BRAND.location} · Est. {BRAND.established}
         </motion.p>
 
-        <h1 className="max-w-5xl font-serif text-[15vw] font-light leading-[0.86] tracking-[-0.02em] text-sand sm:text-[12vw] lg:text-[9.5vw]">
+        <h1 className="max-w-5xl font-serif text-[13.5vw] font-light leading-[0.9] tracking-[-0.02em] text-sand sm:text-[12vw] sm:leading-[0.86] lg:text-[9.5vw]">
           <span className="block overflow-hidden">
             <AnimatedChars text="Where the" delay={0.7} />
           </span>
@@ -97,7 +97,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.9, duration: 1, ease: EASE }}
-          className="mt-10 max-w-md text-base leading-relaxed text-sand/75"
+          className="mt-6 max-w-md text-sm leading-relaxed text-sand/75 md:mt-10 md:text-base"
         >
           A private island of thirty-four residences, held between the reef and
           the open Pacific — where the only schedule is the tide.
@@ -107,7 +107,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.1, duration: 1, ease: EASE }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-8 flex flex-wrap items-center gap-3 md:mt-10 md:gap-4"
         >
           <Button href="/booking" variant="gold" size="lg" cursorLabel="Reserve">
             Reserve your stay
@@ -118,12 +118,12 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* booking widget */}
+      {/* booking widget — in normal flow on mobile, floating on desktop */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.3, duration: 1.1, ease: EASE }}
-        className="absolute inset-x-0 bottom-10 z-20 mx-auto max-w-[100rem] px-6 md:px-10"
+        className="relative z-20 mx-auto w-full max-w-[100rem] px-6 pb-10 md:px-10 lg:absolute lg:inset-x-0 lg:bottom-10 lg:pb-0"
       >
         <HeroBookingWidget />
       </motion.div>
