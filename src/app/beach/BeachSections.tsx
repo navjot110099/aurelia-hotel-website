@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionHeading, SectionLabel, GoldLine, Marquee } from "@/components/ui/Primitives";
@@ -49,7 +49,7 @@ export function BeachIntro() {
         <div ref={ref} className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
+              src="/images/beach-first-light.jpg"
               alt="Aurelia's private white-sand beach at first light"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -69,19 +69,19 @@ export function BeachIntro() {
 
 const CABANAS = [
   {
-    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/ocean-lagoon-room.jpg",
     kind: "Beachfront",
     name: "The Palm Cabana",
     description: "A shaded daybed for two beneath the coconut palms, with a private butler call, chilled linens and an all-day sea view.",
   },
   {
-    image: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/ocean-room-interior.jpg",
     kind: "At the Waterline",
     name: "The Tidal Pavilion",
     description: "A canopied lounge set where the lagoon meets the sand, with its own plunge step, sun deck and a menu from Coralline.",
   },
   {
-    image: "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/coralline-suite.jpg",
     kind: "Reserved by Day",
     name: "The Reef Retreat",
     description: "The beach's most private corner — a walled cabana with an outdoor shower, a hammock in the palms and a dedicated attendant.",
@@ -178,7 +178,7 @@ export function SandDining() {
     <section id="dining" className="relative min-h-[85vh] scroll-mt-24 overflow-hidden" ref={ref}>
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <Image
-          src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1900&q=80"
+          src="/images/beach-dinner-sunset.jpg"
           alt="A private table set on the sand at sunset with lanterns"
           fill
           sizes="100vw"

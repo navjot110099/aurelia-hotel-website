@@ -7,7 +7,7 @@ import { NEWSLETTER_NOTE } from "@/lib/site";
 import { OffersGrid } from "./OffersGrid";
 
 export const metadata: Metadata = {
-  title: "Offers & Journeys | AURELIA",
+  title: "Offers & Journeys",
   description:
     "Rare invitations and considered journeys at Aurelia — extended escapes, honeymoons written in salt, and the reserve entirely reserved for you.",
 };
@@ -19,7 +19,7 @@ export default function OffersPage() {
         eyebrow="Invitations"
         title="Offers & Journeys"
         intro="Not discounts — invitations. A small collection of ways to give a stay at Aurelia a shape all its own, each composed with the same restraint as the island itself."
-        image="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1600&q=80"
+        image="/images/coralline-suite.jpg"
         imageAlt="Coralline Signature Suite at dusk above the lagoon"
       />
 
@@ -62,9 +62,9 @@ export default function OffersPage() {
           <Reveal delay={0.15} className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-stone-light">
             <p>
               A quiet correspondence for those who return. Members receive first
-              refusal on the reserve's most sought seasons, priority on the
+              refusal on the reserve’s most sought seasons, priority on the
               Celestia Residence, and invitations that are never published —
-              private tables at Maré, cellar dinners, and the island's occasional
+              private tables at Maré, cellar dinners, and the island’s occasional
               buyout weekends.
             </p>
           </Reveal>

@@ -12,7 +12,7 @@ import {
 } from "./WeddingsSections";
 
 export const metadata: Metadata = {
-  title: "Weddings | AURELIA",
+  title: "Weddings",
   description:
     "Marry at the edge of the world. A private-island wedding on Aurelia — three ceremony venues, bespoke packages and a reserve that holds a single celebration at a time.",
 };
@@ -24,7 +24,7 @@ export default function WeddingsPage() {
         eyebrow="Weddings"
         title="Marry the Horizon"
         intro="One island. One celebration at a time. A day drawn from the tide, the light and the two of you — witnessed by the people you love and the open Pacific."
-        image="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80"
+        image="/images/wedding-celebration.jpg"
         imageAlt="A wedding ceremony at the water's edge on Aurelia at golden hour"
         align="center"
       />
@@ -46,7 +46,7 @@ export default function WeddingsPage() {
           />
           <Reveal delay={0.15} className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-stone-light">
             <p>
-              Tell us your season and the number of hearts you'll bring. Our
+              Tell us your season and the number of hearts you’ll bring. Our
               wedding producer will reply with a first vision of the day, and — if
               you wish — an invitation to visit the island before you decide.
               Aurelia hosts only a handful of weddings each year.

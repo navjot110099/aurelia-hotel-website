@@ -9,7 +9,7 @@ import {
 } from "./SpaSections";
 
 export const metadata: Metadata = {
-  title: "Spa · Aurelia",
+  title: "Spa",
   description:
     "Aurelia's overwater spa suspends healing above the lagoon — monoï ceremonies, marine renewals and sound baths in the float pavilion, each ritual scored to the movement of the tide.",
 };
@@ -21,7 +21,7 @@ export default function SpaPage() {
         eyebrow="Wellness · The Overwater Spa"
         title="Above the lagoon, below the noise"
         intro="A spa suspended over the water, where every ritual begins with the island's own tides and ends in the quiet of the float pavilion."
-        image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1900&q=80"
+        image="/images/spa-float-pavilion.jpg"
         imageAlt="Aurelia's overwater spa pavilion glowing above the lagoon at dusk"
       />
 

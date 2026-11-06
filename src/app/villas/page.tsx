@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import type { Room } from "@/lib/site";
 import { ROOMS_BY_CATEGORY, FAQ, BRAND } from "@/lib/site";
 import { formatCurrency } from "@/lib/utils";
@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Private Villas · AURELIA",
+  title: "Private Villas",
   description:
     "Beachfront estates with private pools, resident teams and a stretch of white sand of your own — including The Celestia Residence, offered by invitation on Maré Séraphine.",
 };

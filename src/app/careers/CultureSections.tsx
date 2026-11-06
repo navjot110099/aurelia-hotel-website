@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { SectionHeading, GoldLine } from "@/components/ui/Primitives";
@@ -37,7 +37,7 @@ export function CultureStatement() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80"
+              src="/images/coralline-beach-club.jpg"
               alt="Aurelia's team preparing the Coralline Beach Club at first light"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { Instagram } from "lucide-react";
 import { BRAND, GALLERY } from "@/lib/site";
 import { SectionLabel } from "@/components/ui/Primitives";

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Star } from "lucide-react";
@@ -326,7 +326,7 @@ export function WineCellarFeature() {
     >
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <Image
-          src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1900&q=80"
+          src="/images/the-cellar.jpg"
           alt="The Cellar, carved into the island's coral bedrock"
           fill
           sizes="100vw"
@@ -375,11 +375,11 @@ export function WineCellarFeature() {
 /* ------------------------------------------------------------------ */
 
 const FOOD_STRIP = [
-  { src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80", alt: "A plated course at Maré" },
-  { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80", alt: "Coralline Beach Club on the sand" },
-  { src: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80", alt: "Line-caught fish over embers" },
-  { src: "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1000&q=80", alt: "A pour from The Cellar" },
-  { src: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=80", alt: "Reef oysters on ice" },
+  { src: "/images/dining-mare.jpg", alt: "A plated course at Maré" },
+  { src: "/images/coralline-beach-club.jpg", alt: "Coralline Beach Club on the sand" },
+  { src: "/images/dining-fire.jpg", alt: "Line-caught fish over embers" },
+  { src: "/images/wine-tasting.jpg", alt: "A pour from The Cellar" },
+  { src: "/images/dining-oysters.jpg", alt: "Reef oysters on ice" },
 ];
 
 export function FoodGalleryStrip() {

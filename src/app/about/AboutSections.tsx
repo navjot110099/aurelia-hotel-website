@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Sun, Droplets, Waves } from "lucide-react";
@@ -48,7 +48,7 @@ export function BrandStory() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80"
+              src="/images/island-aerial.jpg"
               alt="The Aurelia reserve seen from the air at golden hour"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -120,7 +120,7 @@ export function Architecture() {
         <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-sm lg:order-1">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80"
+              src="/images/architecture-dusk.jpg"
               alt="Architecture of the Aurelia reserve dissolving into its island"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -275,25 +275,25 @@ const LEADERS = [
     name: "Séraphine Aurel",
     title: "Founder & Custodian",
     bio: "A former conservationist turned hotelier, Séraphine conceived the reserve as a place where the finest hospitality and the most serious stewardship would be one act. She still walks the reef most mornings.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/portrait-managing-director.jpg",
   },
   {
     name: "Matteo Lombardi",
     title: "Managing Director",
     bio: "Twenty years across the world's great houses taught Matteo that luxury is a discipline of subtraction. He runs Aurelia the way a conductor runs an orchestra — invisibly, and to the last detail.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/portrait-culinary.jpg",
   },
   {
     name: "Amara Chen",
     title: "Director of Guest Experience",
     bio: "Amara leads the team that anticipates a wish before it is spoken. Her single rule for the butlers and the beach: notice everything, and be seen doing none of it.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/portrait-experiences.jpg",
   },
   {
     name: "Dr. Nālani Kealoha",
     title: "Head of Sustainability",
     bio: "A marine biologist who traded a research post for a reef, Nālani directs the coral programme and the island's carbon-negative operation, proving nightly that the two ambitions are the same.",
-    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/portrait-guest-relations.jpg",
   },
 ];
 

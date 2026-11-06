@@ -6,7 +6,10 @@ A cinematic, award-targeted marketing experience for a fictional ultra-luxury
 private-island resort. Built as a real, production-ready Next.js 15 application —
 not a template, not a mockup.
 
-![AURELIA](https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1200&q=80)
+**🔗 Live demo:** https://aurelia-reserve.vercel.app
+<!-- ^ Replace with your own deployment URL (e.g. your Vercel domain). -->
+
+![AURELIA — the home hero: a custom WebGL night-ocean behind the wordmark](docs/hero.jpg)
 
 ---
 
@@ -114,17 +117,45 @@ npm run start      # serve the production build
 
 ---
 
-## Accessibility & performance
+## Images
 
-- Semantic landmarks, a skip-link, `:focus-visible` styling, ARIA labels.
-- Full `prefers-reduced-motion` support (WebGL and scroll effects degrade to
-  static, tasteful fallbacks).
-- `next/image` (AVIF/WebP) with explicit sizes, font `display: swap`,
-  client-only WebGL via dynamic import, adaptive DPR + performance monitor on
-  the R3F canvas, GPU-friendly transforms.
-- Complete SEO: per-page metadata, OpenGraph, Twitter cards, `Resort` JSON-LD,
-  sitemap, robots and manifest.
+All photography is served **locally** from `public/images` — the site carries no
+runtime dependency on a remote image CDN.
+
+- Each photo is downloaded once, resized to a 1920px master and re-encoded as a
+  progressive MozJPEG by [`scripts/build-local-images.mjs`](scripts/build-local-images.mjs).
+- The same script emits [`src/lib/image-manifest.ts`](src/lib/image-manifest.ts)
+  (intrinsic width/height + a base64 blur placeholder per image) and
+  [`public/images/CREDITS.md`](public/images/CREDITS.md) documenting every source.
+- [`src/components/ui/SmartImage.tsx`](src/components/ui/SmartImage.tsx) is a thin
+  `next/image` wrapper that auto-attaches the `blur` placeholder from the manifest,
+  so every photo renders with a width/height **and** a blur-up.
+
+```bash
+node scripts/build-local-images.mjs    # (re)fetch + optimise + regenerate manifest
+node scripts/rewrite-image-urls.mjs    # swap any remote URLs for local paths
+```
 
 ---
 
-_Fictional brand created for demonstration. Photography via Unsplash._
+## Accessibility & performance
+
+- Semantic landmarks (single `<main>`), a skip-link, `:focus-visible` styling and
+  ARIA labels / `aria-pressed` on every icon-only control.
+- Full `prefers-reduced-motion` support — the WebGL ocean and scroll effects
+  degrade to a static, tasteful still.
+- **3D hero** is lazy and defensive: the Three.js/R3F canvas lives in its own
+  chunk, mounts only on capable devices **after the browser is idle**, caps the
+  device pixel ratio (≤ 1.5) with an adaptive performance monitor, and explicitly
+  disposes its GPU resources on unmount. Reduced-motion **and** low-power /
+  Save-Data devices skip it entirely and get a server-rendered still (the hero LCP
+  image).
+- `next/image` (AVIF/WebP) everywhere, local blur placeholders, font
+  `display: swap`, GPU-friendly transforms.
+- Complete SEO: per-page metadata, a local OpenGraph/Twitter card (`/og.jpg`),
+  `Resort` JSON-LD, sitemap, robots, manifest and an SVG favicon.
+
+---
+
+_Fictional brand created for demonstration. Photography via [Unsplash](https://unsplash.com/license)
+(free license) — see [`public/images/CREDITS.md`](public/images/CREDITS.md)._

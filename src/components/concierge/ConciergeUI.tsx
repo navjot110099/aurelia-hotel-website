@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -552,7 +552,7 @@ function RecommendationCard({
     if (!t) return null;
     return (
       <CardShell
-        image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80"
+        image="/images/spa-float-pavilion.jpg"
         alt={t.name}
         badge="Spa"
         title={t.name}

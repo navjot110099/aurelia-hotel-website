@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import type { Room } from "@/lib/site";
 import { ROOMS_BY_CATEGORY, FAQ, BRAND } from "@/lib/site";
 import { formatCurrency } from "@/lib/utils";
@@ -14,7 +14,7 @@ import { SectionHeading, SectionLabel, GoldLine } from "@/components/ui/Primitiv
 import { Waves, Sparkles, Coffee, ShieldCheck, Leaf, Wind } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Ocean Rooms · AURELIA",
+  title: "Ocean Rooms",
   description:
     "Overwater and garden retreats above the turquoise shallows of Maré Séraphine — hand-troweled lime, floating oak beds and private decks that open to the reef.",
 };

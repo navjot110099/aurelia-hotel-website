@@ -7,7 +7,7 @@ import { FAQ, BRAND } from "@/lib/site";
 import { FaqAccordion } from "./FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked | AURELIA",
+  title: "Frequently Asked",
   description:
     "Everything you might wish to know before you arrive at Aurelia — from private transfers to the reserve's sustainability commitment.",
 };
@@ -19,7 +19,7 @@ export default function FaqPage() {
         eyebrow="Before You Arrive"
         title="Questions, Answered"
         intro="A quiet primer for the curious — and for those already dreaming of the lagoon. Should a question remain, our concierge is never more than a message away."
-        image="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80"
+        image="/images/ocean-lagoon-room.jpg"
         imageAlt="Overwater residence at Aurelia opening onto the turquoise lagoon"
       />
 

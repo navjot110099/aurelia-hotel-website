@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -20,7 +20,7 @@ const TILES: Tile[] = [
     title: "The Infinity Pool",
     copy: "A 50-metre horizon pool that spills into the lagoon at the island's edge.",
     image:
-      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1400&q=80",
+      "/images/ocean-room-interior.jpg",
     href: "/experiences",
     className: "md:col-span-2 md:row-span-2",
   },
@@ -28,7 +28,7 @@ const TILES: Tile[] = [
     title: "Overwater Spa",
     copy: "Float pavilions above the coral garden.",
     image:
-      "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
+      "/images/spa-float-pavilion.jpg",
     href: "/spa",
     className: "md:col-span-2",
   },
@@ -36,7 +36,7 @@ const TILES: Tile[] = [
     title: "Private Marina",
     copy: "Berth for the estate yacht & tenders.",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "/images/yacht-aurelia.jpg",
     href: "/experiences#yacht",
     className: "",
   },
@@ -44,7 +44,7 @@ const TILES: Tile[] = [
     title: "Helipad",
     copy: "Arrive above the reef.",
     image:
-      "https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?auto=format&fit=crop&w=1200&q=80",
+      "/images/helicopter-journey.jpg",
     href: "/experiences#helicopter",
     className: "",
   },
@@ -52,7 +52,7 @@ const TILES: Tile[] = [
     title: "Private Beach",
     copy: "A mile of white sand kept for our guests alone.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "/images/beach-first-light.jpg",
     href: "/beach",
     className: "md:col-span-2",
   },

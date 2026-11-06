@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { SectionLabel } from "@/components/ui/Primitives";
@@ -53,7 +53,7 @@ export function Prologue() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80"
+              src="/images/island-aerial.jpg"
               alt="Aurelia reserve seen from the air at golden hour"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

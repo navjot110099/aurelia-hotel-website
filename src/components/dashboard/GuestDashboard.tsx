@@ -2,7 +2,7 @@
 
 import { createElement, useState } from "react";
 import type { LucideProps } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Anchor,
@@ -88,7 +88,7 @@ const GUEST = {
   phone: "+33 6 12 44 90 21",
   city: "Paris, France",
   avatar:
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "/images/guest-portrait.jpg",
 } as const;
 
 const TABS: Tab[] = [
@@ -112,7 +112,7 @@ const UPCOMING: Stay = {
   guests: 2,
   status: "Confirmed",
   image:
-    "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1600&q=80",
+    "/images/coralline-suite.jpg",
 };
 
 const ITINERARY: ItineraryItem[] = [
@@ -159,7 +159,7 @@ const PAST_STAYS: Stay[] = [
     guests: 2,
     status: "Completed",
     image:
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
+      "/images/aurora-suite.jpg",
   },
   {
     id: "past-2",
@@ -171,7 +171,7 @@ const PAST_STAYS: Stay[] = [
     guests: 4,
     status: "Completed",
     image:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80",
+      "/images/palmwood-villa.jpg",
   },
   {
     id: "past-3",
@@ -183,7 +183,7 @@ const PAST_STAYS: Stay[] = [
     guests: 2,
     status: "Completed",
     image:
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80",
+      "/images/ocean-lagoon-room.jpg",
   },
 ];
 
@@ -236,28 +236,28 @@ const WISHLIST: WishItem[] = [
     kind: "On the Water",
     note: "A day charter to the outer atolls with dinner beneath the mast.",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "/images/yacht-aurelia.jpg",
   },
   {
     title: "Helicopter Journey · Sandbar Landing",
     kind: "In the Air",
     note: "Champagne on a sandbar that appears only at low tide.",
     image:
-      "https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?auto=format&fit=crop&w=1200&q=80",
+      "/images/helicopter-journey.jpg",
   },
   {
     title: "The Aurelia Ritual",
     kind: "Wellness",
     note: "Monoï ceremony & sound bath in the overwater float pavilion.",
     image:
-      "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
+      "/images/spa-float-pavilion.jpg",
   },
   {
     title: "The Cellar · Sommelier Dinner",
     kind: "Dining",
     note: "A vaulted table for twelve carved into the coral bedrock.",
     image:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
+      "/images/the-cellar.jpg",
   },
 ];
 
@@ -941,10 +941,7 @@ export function GuestDashboard() {
   const active = TABS.find((t) => t.id === tab)!;
 
   return (
-    <main
-      id="main"
-      className="vignette relative min-h-[100svh] px-4 pb-24 pt-32 md:px-8 lg:px-10"
-    >
+    <div className="vignette relative min-h-[100svh] px-4 pb-24 pt-32 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[100rem]">
         {/* Header */}
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -1047,6 +1044,6 @@ export function GuestDashboard() {
           </section>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

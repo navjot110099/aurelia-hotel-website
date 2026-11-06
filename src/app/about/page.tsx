@@ -16,7 +16,7 @@ import {
 } from "./AboutSections";
 
 export const metadata: Metadata = {
-  title: "The Reserve · About | AURELIA",
+  title: "The Reserve · About",
   description:
     "The story of Aurelia — a private-island reserve on Maré Séraphine drawn by Studio Kenzō Aramaki, restoring its reef and giving more to the ocean than it takes.",
 };
@@ -29,7 +29,7 @@ export default function AboutPage() {
           eyebrow="The Reserve"
           title="Where the Horizon Belongs to You"
           intro="One island in the South Pacific, kept apart from the world. This is the story of how Aurelia came to be — and the quiet convictions that hold it together."
-          image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+          image="/images/architecture-dusk.jpg"
           imageAlt="The Aurelia reserve at dusk, dissolving into its island"
         />
       </section>

@@ -7,7 +7,7 @@ import { BRAND } from "@/lib/site";
 import { MeetingSpaces, MeetingTech, MeetingAgenda } from "./MeetingsSections";
 
 export const metadata: Metadata = {
-  title: "Executive Retreats & Meetings | AURELIA",
+  title: "Executive Retreats & Meetings",
   description:
     "Executive retreats and leadership offsites on a private South Pacific island — overwater boardrooms, seamless technology, wellness-integrated agendas and full-island buyouts.",
 };
@@ -19,7 +19,7 @@ export default function MeetingsPage() {
         eyebrow="Executive Retreats"
         title="Where Leaders Think"
         intro="The clearest decisions are made where the noise ends. Aurelia hosts small, consequential gatherings — leadership offsites, board retreats and partner summits — on an island with a single agenda: yours."
-        image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+        image="/images/architecture-dusk.jpg"
         imageAlt="A glass-walled overwater meeting pavilion at Aurelia"
       />
 
@@ -34,7 +34,7 @@ export default function MeetingsPage() {
           <Reveal delay={0.15} className="flex flex-col justify-end text-base leading-relaxed text-stone-light">
             <p>
               A retreat at Aurelia removes the thousand small interruptions that
-              blunt a team's best thinking. No lobby traffic, no competing events,
+              blunt a team’s best thinking. No lobby traffic, no competing events,
               no city beyond the reef. Just your people, a producer who
               anticipates every need, and the rare permission to concentrate. We
               host one group at a time.
@@ -60,7 +60,7 @@ export default function MeetingsPage() {
           <Reveal delay={0.15} className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-stone-light">
             <p>
               For summits that demand absolute discretion, Aurelia offers full
-              buyouts of all thirty-four residences and the island's entire team.
+              buyouts of all thirty-four residences and the island’s entire team.
               Your company arrives to a reserve that is, for those days, private
               in every sense — sealed, staffed and singular. Our meetings atelier
               will return a tailored proposal within a day.

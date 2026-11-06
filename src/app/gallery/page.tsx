@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/Primitives";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Gallery · AURELIA",
+  title: "Gallery",
   description:
     "A portrait of the reserve — residences, ocean, dining, spa and the island itself, photographed across the seasons of Maré Séraphine.",
 };

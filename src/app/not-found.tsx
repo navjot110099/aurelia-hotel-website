@@ -7,8 +7,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 export default function NotFound() {
   return (
-    <main
-      id="main"
+    <div
       className="vignette relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center"
     >
       {/* Ambient gold glow */}
@@ -75,6 +74,6 @@ export default function NotFound() {
         aria-hidden
         className="relative z-10 mt-16 h-px w-40 bg-gradient-to-r from-transparent via-gold/60 to-transparent"
       />
-    </main>
+    </div>
   );
 }

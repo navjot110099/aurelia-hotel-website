@@ -54,7 +54,7 @@ function Section({
 
 export default function PrivacyPage() {
   return (
-    <main id="main" className="vignette relative overflow-hidden">
+    <div className="vignette relative overflow-hidden">
       {/* Header */}
       <header className="relative px-6 pt-40 md:px-10">
         <div className="mx-auto max-w-editorial">
@@ -327,6 +327,6 @@ export default function PrivacyPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion } from "framer-motion";
 import { Users } from "lucide-react";
 import { SectionHeading, GoldLine } from "@/components/ui/Primitives";
@@ -15,7 +15,7 @@ const VENUES = [
     description:
       "A crescent of powder sand framed by palms and lit only by fire and stars — the reserve's grandest open-air room.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "/images/beach-first-light.jpg",
   },
   {
     name: "The Cellar",
@@ -23,7 +23,7 @@ const VENUES = [
     description:
       "A vaulted chamber carved into the coral bedrock, twelve thousand bottles deep. For dinners that feel like a held secret.",
     image:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80",
+      "/images/the-cellar.jpg",
   },
   {
     name: "The Overwater Deck",
@@ -31,7 +31,7 @@ const VENUES = [
     description:
       "A floating terrace suspended above the lagoon, its glass rail dissolving into the horizon at golden hour.",
     image:
-      "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1400&q=80",
+      "/images/coralline-suite.jpg",
   },
   {
     name: "Séraphine Point",
@@ -39,7 +39,7 @@ const VENUES = [
     description:
       "The island's northern headland, wrapped on three sides by open ocean — for ceremonies and toasts beneath a limitless sky.",
     image:
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80",
+      "/images/island-aerial.jpg",
   },
 ];
 

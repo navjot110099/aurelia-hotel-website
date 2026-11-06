@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Button } from "@/components/ui/Button";
@@ -27,7 +27,7 @@ export function FinalCTA() {
     >
       <motion.div style={{ y }} className="absolute inset-0 h-[124%]">
         <Image
-          src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=2000&q=80"
+          src="/images/beach-dinner-sunset.jpg"
           alt="The reserve at golden hour"
           fill
           sizes="100vw"

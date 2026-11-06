@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { EXPERIENCES } from "@/lib/site";
@@ -140,7 +140,7 @@ export function ButlerCTA() {
     <section id="butler" className="relative min-h-[80vh] scroll-mt-24 overflow-hidden" ref={ref}>
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1900&q=80"
+          src="/images/beach-first-light.jpg"
           alt="A restored schooner at anchor as the sky turns gold"
           fill
           sizes="100vw"

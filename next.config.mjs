@@ -2,11 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    // All photography is served locally from /public/images — no remote CDN.
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "plus.unsplash.com" },
-    ],
   },
   // three.js / R3F ship untranspiled ESM in places — let Next handle it.
   transpilePackages: ["three"],

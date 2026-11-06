@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -9,14 +8,10 @@ import { BRAND } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 import { AnimatedChars } from "@/components/ui/AnimatedText";
 import { HeroBookingWidget } from "@/components/booking/HeroBookingWidget";
-import type { HeroMode } from "@/components/three/HeroScene";
+// HeroScene paints a server-rendered still immediately and lazy-loads the
+// WebGL ocean on top (client-only, after idle) from its own chunk.
+import { HeroScene, type HeroMode } from "@/components/three/HeroScene";
 import { cn } from "@/lib/utils";
-
-// R3F cannot render on the server — load the canvas client-only.
-const HeroScene = dynamic(
-  () => import("@/components/three/HeroScene").then((m) => m.HeroScene),
-  { ssr: false }
-);
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 

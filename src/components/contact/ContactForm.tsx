@@ -99,7 +99,7 @@ export function ContactForm() {
             </motion.span>
             <p className="eyebrow mb-4 text-gold">Enquiry received</p>
             <h3 className="font-serif text-3xl font-light text-sand">
-              Thank you — we'll be in touch shortly.
+              Thank you — we’ll be in touch shortly.
             </h3>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-sand/55">
               A member of our reservations atelier will reply personally, usually

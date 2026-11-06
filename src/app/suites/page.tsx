@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import type { Room } from "@/lib/site";
 import { ROOMS_BY_CATEGORY, FAQ, TESTIMONIALS, BRAND } from "@/lib/site";
 import { formatCurrency } from "@/lib/utils";
@@ -13,7 +13,7 @@ import { SectionHeading, SectionLabel, GoldLine } from "@/components/ui/Primitiv
 import { RotateCw, Move, Quote, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Signature Suites · AURELIA",
+  title: "Signature Suites",
   description:
     "Duplex overwater suites and the island's most exalted address — infinity edges, glass-floor lounges and rooftop observatories above the coral gardens of Maré Séraphine.",
 };

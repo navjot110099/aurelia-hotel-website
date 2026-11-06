@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { notFound } from "next/navigation";
 import { JOURNAL } from "@/lib/site";
 import { AnimatedChars } from "@/components/ui/AnimatedText";
@@ -20,10 +20,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = JOURNAL.find((p) => p.slug === slug);
   if (!post) {
-    return { title: "Essay Not Found | AURELIA" };
+    return { title: "Essay Not Found" };
   }
   return {
-    title: `${post.title} | The Journal · AURELIA`,
+    title: `${post.title} · The Journal`,
     description: post.excerpt,
     openGraph: {
       title: post.title,

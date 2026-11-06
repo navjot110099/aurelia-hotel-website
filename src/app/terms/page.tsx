@@ -54,7 +54,7 @@ function Section({
 
 export default function TermsPage() {
   return (
-    <main id="main" className="vignette relative overflow-hidden">
+    <div className="vignette relative overflow-hidden">
       <header className="relative px-6 pt-40 md:px-10">
         <div className="mx-auto max-w-editorial">
           <p className="eyebrow mb-6 text-gold">Legal · Terms</p>
@@ -281,6 +281,6 @@ export default function TermsPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

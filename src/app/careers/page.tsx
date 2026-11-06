@@ -8,7 +8,7 @@ import { CultureStatement, Values, Benefits } from "./CultureSections";
 import { RolesList } from "./RolesList";
 
 export const metadata: Metadata = {
-  title: "Careers · Life at Aurelia | AURELIA",
+  title: "Careers · Life at Aurelia",
   description:
     "Live and work on a private South Pacific island reserve. Explore open roles at Aurelia and join a team of two hundred who make the impossible feel effortless.",
 };
@@ -20,7 +20,7 @@ export default function CareersPage() {
         eyebrow="Careers"
         title="Life at Aurelia"
         intro="Two hundred people, one island, and a shared devotion to a standard the world calls impossible. If hospitality is your craft, this is where it comes alive."
-        image="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80"
+        image="/images/palmwood-villa.jpg"
         imageAlt="The palms and beach of the Aurelia reserve at golden hour"
       />
 
@@ -35,7 +35,7 @@ export default function CareersPage() {
             <SectionHeading index="04" eyebrow="Open Positions" title="Where you might fit" />
             <Reveal delay={0.15} className="max-w-sm text-base leading-relaxed text-stone-light">
               <p>
-                A living list of the roles we are hiring for now. Don't see yours?
+                A living list of the roles we are hiring for now. Don’t see yours?
                 We are always glad to meet exceptional people — write to us anyway.
               </p>
             </Reveal>

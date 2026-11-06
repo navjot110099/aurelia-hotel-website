@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     description: BRAND.tagline,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1200&q=80",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "AURELIA — Private Island Reserve",
+        alt: "AURELIA — Private Island Reserve. Where the horizon belongs to you.",
       },
     ],
   },
@@ -60,9 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${BRAND.name} — ${BRAND.descriptor}`,
     description: BRAND.tagline,
-    images: [
-      "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1200&q=80",
-    ],
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,
@@ -70,6 +68,13 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   alternates: { canonical: SITE_URL },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
+  manifest: "/manifest.webmanifest",
+  category: "travel",
 };
 
 export const viewport: Viewport = {

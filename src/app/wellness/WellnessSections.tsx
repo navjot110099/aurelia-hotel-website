@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Wind, Sunrise, Waves, Leaf, Activity } from "lucide-react";
@@ -194,7 +194,7 @@ export function PractitionerHighlight() {
         <div ref={ref} className="relative aspect-[4/5] overflow-hidden rounded-sm lg:order-2">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1400&q=80"
+              src="/images/wellness-practitioner.jpg"
               alt="Kaia Rautahi, Aurelia's lead wellness practitioner, on the deck at dawn"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

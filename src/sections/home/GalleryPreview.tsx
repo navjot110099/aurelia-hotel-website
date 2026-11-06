@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion } from "framer-motion";
 import { GALLERY } from "@/lib/site";
 import { SectionHeading } from "@/components/ui/Primitives";

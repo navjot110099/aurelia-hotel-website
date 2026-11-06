@@ -846,10 +846,7 @@ export function AdminDashboard() {
   const active = NAV.find((n) => n.id === section)!;
 
   return (
-    <main
-      id="main"
-      className="vignette relative min-h-[100svh] px-4 pb-24 pt-32 md:px-8 lg:px-10"
-    >
+    <div className="vignette relative min-h-[100svh] px-4 pb-24 pt-32 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[100rem]">
         {/* Header */}
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -949,6 +946,6 @@ export function AdminDashboard() {
           </section>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

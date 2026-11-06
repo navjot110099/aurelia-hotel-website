@@ -69,7 +69,7 @@ export default function ContactPage() {
         eyebrow="Contact & Arrival"
         title="Begin the conversation."
         intro="However you prefer to reach us — a call answered at any hour, an email replied to with care, or a note left below — the island is closer than you think."
-        image="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1600&q=80"
+        image="/images/island-aerial.jpg"
         imageAlt="Aerial view of the Aurelia reserve and its lagoon at first light"
       />
 

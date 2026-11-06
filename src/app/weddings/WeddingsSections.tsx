@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Check } from "lucide-react";
@@ -16,19 +16,19 @@ const VENUES = [
     name: "Séraphine Point",
     line: "Vows at the island's edge, ocean on three sides.",
     image:
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80",
+      "/images/island-aerial.jpg",
   },
   {
     name: "The White Beach",
     line: "Barefoot on the sand as the sun falls into the sea.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "/images/beach-first-light.jpg",
   },
   {
     name: "The Overwater Deck",
     line: "A floating aisle above the lagoon, lit by lanterns.",
     image:
-      "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1400&q=80",
+      "/images/coralline-suite.jpg",
   },
 ];
 
@@ -105,7 +105,7 @@ export function WeddingNarrative() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80"
+              src="/images/wedding-celebration.jpg"
               alt="A couple beneath a floral arch at the water's edge at Aurelia"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

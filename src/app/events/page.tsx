@@ -7,7 +7,7 @@ import { BRAND } from "@/lib/site";
 import { VenueGrid, EventTypes } from "./EventsSections";
 
 export const metadata: Metadata = {
-  title: "Private Events & Celebrations | AURELIA",
+  title: "Private Events & Celebrations",
   description:
     "Milestone celebrations and private gatherings on a South Pacific island reserve — four extraordinary venues, one dedicated team, and the whole of Aurelia at your disposal.",
 };
@@ -19,7 +19,7 @@ export default function EventsPage() {
         eyebrow="Private Events"
         title="Occasions, Islanded"
         intro="When a moment deserves more than a room, it deserves an island. Aurelia hosts a small number of private celebrations each year — each one composed as carefully as a nine-course dinner."
-        image="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80"
+        image="/images/beach-dinner-sunset.jpg"
         imageAlt="Candlelit beach dinner beneath the stars at Aurelia"
       />
 

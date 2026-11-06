@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion } from "framer-motion";
 import { Users, Wifi, Presentation, Waves } from "lucide-react";
 import { SectionHeading, GoldLine } from "@/components/ui/Primitives";
@@ -14,21 +14,21 @@ const SPACES = [
     capacity: "Up to 16",
     detail: "A glass-walled table suspended above the lagoon, with 4K conferencing, private catering and a butler on call.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+      "/images/architecture-dusk.jpg",
   },
   {
     name: "The Séraphine Salon",
     capacity: "Up to 40",
     detail: "A flexible studio for keynotes and workshops — reconfigurable, acoustically tuned, opening onto a private garden terrace.",
     image:
-      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1400&q=80",
+      "/images/horizon-garden-room.jpg",
   },
   {
     name: "The Cellar Table",
     capacity: "Up to 12",
     detail: "A vaulted chamber for the decisions that matter most — no screens, no signal, only the twelve of you and a sommelier.",
     image:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80",
+      "/images/the-cellar.jpg",
   },
 ];
 

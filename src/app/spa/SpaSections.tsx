@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { SPA_TREATMENTS } from "@/lib/site";
@@ -51,7 +51,7 @@ export function SpaPhilosophy() {
         <div ref={ref} className="relative aspect-[4/5] overflow-hidden rounded-sm">
           <motion.div style={{ y, scale }} className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1400&q=80"
+              src="/images/spa-float-pavilion.jpg"
               alt="Aurelia's overwater float pavilion above the lagoon"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -205,7 +205,7 @@ export function PrivateSpaFeature() {
     <section id="private" className="relative min-h-[80vh] scroll-mt-24 overflow-hidden" ref={ref}>
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <Image
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1900&q=80"
+          src="/images/spa-cabana.jpg"
           alt="A private spa cabana open to the sea"
           fill
           sizes="100vw"

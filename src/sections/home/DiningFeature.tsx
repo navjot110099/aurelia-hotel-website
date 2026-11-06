@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Image from "@/components/ui/SmartImage";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { CHEF } from "@/lib/site";
 import { SectionLabel } from "@/components/ui/Primitives";
@@ -26,7 +26,7 @@ export function DiningFeature() {
       {/* parallax background */}
       <motion.div style={{ y }} className="absolute inset-0 h-[120%]">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80"
+          src="/images/dining-mare.jpg"
           alt="Dinner service at Maré as the sun falls"
           fill
           sizes="100vw"
