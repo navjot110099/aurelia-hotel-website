@@ -252,7 +252,7 @@ const BLOG_ROWS = [
 
 /* Availability heat-grid: 6 residence rows × 14 days, occupancy 0–3 */
 const HEAT_ROWS = ROOM_TYPES.map((r) => r.name);
-// Deterministic invented occupancy levels (0 free → 3 full).
+// Deterministic sample occupancy levels (0 free → 3 full).
 const HEAT_DATA: number[][] = [
   [3, 3, 2, 2, 1, 0, 0, 1, 2, 3, 3, 2, 1, 1],
   [2, 2, 3, 3, 3, 2, 1, 1, 0, 1, 2, 2, 3, 3],

@@ -75,7 +75,7 @@ type Notification = {
 };
 
 /* ================================================================== */
-/*  Mock data — fictional guest Mr. Julien Deveraux                    */
+/*  Guest data — Mr. Julien Deveraux                                   */
 /* ================================================================== */
 
 const GUEST = {

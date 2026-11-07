@@ -2,11 +2,10 @@
 
 > _Where the horizon belongs to you._
 
-A cinematic, award-targeted marketing experience for a fictional ultra-luxury
-private-island resort. Built as a real, production-ready Next.js 15 application —
-not a template, not a mockup.
+A cinematic, award-targeted marketing experience for an ultra-luxury
+private-island resort. Built as a production-ready Next.js 15 application.
 
-**🔗 Live demo:** https://aurelia-reserve.vercel.app
+**🔗 Live:** https://aurelia-reserve.vercel.app
 <!-- ^ Replace with your own deployment URL (e.g. your Vercel domain). -->
 
 ![AURELIA — the home hero: a custom WebGL night-ocean behind the wordmark](docs/hero.jpg)
@@ -15,7 +14,7 @@ not a template, not a mockup.
 
 ## The brand
 
-**AURELIA** is an invented ultra-luxury reserve on the fictional isle of **Maré
+**AURELIA** is an ultra-luxury reserve on the isle of **Maré
 Séraphine** in the South Pacific — 34 overwater and beachfront residences, a
 two-Michelin-star kitchen (_Maré_), an overwater spa, a private marina, a
 helipad and a living coral reef. Every word of copy in the project is bespoke.
@@ -157,5 +156,5 @@ node scripts/rewrite-image-urls.mjs    # swap any remote URLs for local paths
 
 ---
 
-_Fictional brand created for demonstration. Photography via [Unsplash](https://unsplash.com/license)
+_Photography via [Unsplash](https://unsplash.com/license)
 (free license) — see [`public/images/CREDITS.md`](public/images/CREDITS.md)._

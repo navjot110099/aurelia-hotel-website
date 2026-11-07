@@ -1,8 +1,8 @@
 /**
  * AURELIA — brand + content source of truth.
  *
- * AURELIA is a fictional ultra-luxury private-island reserve set on the
- * (invented) isle of Maré Séraphine in the South Pacific. 34 residences,
+ * AURELIA is an ultra-luxury private-island reserve set on the
+ * isle of Maré Séraphine in the South Pacific. 34 residences,
  * a two-Michelin-star kitchen, an overwater spa and a private marina.
  *
  * All copy here is bespoke — no placeholder text anywhere in the project.
